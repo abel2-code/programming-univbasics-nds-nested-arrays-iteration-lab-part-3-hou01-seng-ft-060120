@@ -1,4 +1,4 @@
 def join_nested_strings(src)
-  src.tr("0-9", "")
+  src.gsub!(/\d+/, "")
   src.map(&:join).join(' ')
 end
