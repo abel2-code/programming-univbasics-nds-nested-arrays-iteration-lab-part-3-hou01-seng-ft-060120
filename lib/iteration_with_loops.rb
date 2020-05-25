@@ -4,3 +4,4 @@ def join_nested_strings(src)
 end.join(" ")
 
 [sentence]
+end
