@@ -1,4 +1,4 @@
 def join_nested_strings(src)
-  src.grep(String)
+  puts src.grep(String)
 
 end
