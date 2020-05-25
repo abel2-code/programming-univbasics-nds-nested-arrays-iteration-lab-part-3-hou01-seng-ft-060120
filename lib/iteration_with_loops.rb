@@ -1,4 +1,6 @@
 def join_nested_strings(src)
-  src.delete_if {|src| src = Integer}
-  src.map(&:join).join(' ')
-end
+  sentence = src.flat_map do |items|
+    items.select { |item| item.is_a?(String)}
+end.join(" ")
+
+[sentence]
