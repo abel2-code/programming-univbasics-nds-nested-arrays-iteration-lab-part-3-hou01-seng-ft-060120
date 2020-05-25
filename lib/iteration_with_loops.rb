@@ -1,3 +1,3 @@
 def join_nested_strings(src)
-  arr.map(&:join).join(' ')
+  src.map(&:join).join(' ')
 end
