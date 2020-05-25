@@ -1,6 +1,4 @@
 def join_nested_strings(src)
-  result = src.select do |elem|
-    elem.is_a? Integer
-  end
+  src.grep(String)
   src.map(&:join).join(' ')
 end
