@@ -1,5 +1,5 @@
 def join_nested_strings(src)
-  result = arr.select do |elem|
+  result = src.select do |elem|
     elem.is_a? Integer
   end
   src.map(&:join).join(' ')
