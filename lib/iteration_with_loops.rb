@@ -1,4 +1,4 @@
 def join_nested_strings(src)
-  src.reject{|src| src.match(/^\d+$/)}
+  array.keep_if { |obj| (obj.is_a? String) }
   src.map(&:join).join(' ')
 end
